@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>XSS Demo</title>
+</head>
+<body>
+
+<p>This page renders a response from the server, a list of todos.</p>
+
+<p>One of the todos is an XSS attack and contains malicious code.</p>
+
+<p>Open src/www/js/security/xss.js to see more.</p>
+
+<hr>
+
+<h1>Todos</h1>
+
+<ul id="todos"></ul>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.2.6/purify.min.js"></script>
+<script src="xss.js"></script>
+</body>
+</html>

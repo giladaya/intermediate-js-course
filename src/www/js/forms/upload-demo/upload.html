@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload File Demo</title>
+  <style>
+    img {
+      width: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<form enctype="multipart/form-data" action="/api/uploads" method="post">
+  <input type="file" name="files" accept="image/*" multiple />
+  <button type="submit">Upload</button>
+  <div id="details"></div>
+</form>
+
+<script src="upload.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+</body>
+</html>

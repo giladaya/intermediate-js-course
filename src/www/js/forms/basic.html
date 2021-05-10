@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms Basics</title>
+
+  <style>
+    .form-group {
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+
+<p>Get started in src/www/js/forms/basic.html</p>
+
+<!--
+
+Exercise 1
+============================================
+
+Create a basic form for filing issues in a bugtracker. It should include the following information:
+
+  1. Story title
+  2. Which Epic (Q1, Q2, Q3, or Q4) <-- dropdown
+  3. Type of story (Feature, Bug, or Chore) <-- radio buttons
+  4. Description <-- textarea
+  5. Related URL link
+  5. Subscribe to updates? <-- checkbox
+
+The form should POST to /api/issues.
+
+Exercise 2
+============================================
+
+You're discovering people wind up submitting bad data -- missing story names, no story type, etc. It's time
+to add some validations!
+
+Validate the following:
+
+  1. Title, epic, type, and description should all be required
+  2. Description should be at least 10 characters long
+  3. Related URL should be of URL format https?://...
+
+Lastly, people are tired of choosing "Feature" when that's usually the type of issue being filed. Make that
+the default choice.
+
+-->
+
+<form>
+</form>
+
+</body>
+</html>

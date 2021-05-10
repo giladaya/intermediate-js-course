@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms Basics</title>
+
+  <style>
+    .form-group {
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+
+<form method="post" action="/api/users">
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" name="name">
+  </div>
+
+  <div class="form-group">
+    <label>Biography</label>
+    <textarea rows="3" name="bio"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label>Favorite pet</label>
+    <select name="pets">
+      <option value="">Choose one</option>
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="bird">Bird</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <input type="checkbox" name="newsletter" value="1" id="newsletter">
+    <label for="newsletter">Sign up for newsletter</label>
+  </div>
+
+  <div class="form-group">
+    <label>Phone number</label>
+    <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Enter digits in the format ###-###-####">
+  </div>
+
+  <div class="form-group">
+    <input type="radio" name="contact" value="email" id="contact-email">
+    <label for="contact-email">Email</label>
+
+    <input type="radio" name="contact" value="phone" id="contact-phone">
+    <label for="contact-phone">Phone</label>
+
+    <input type="radio" name="contact" value="mail" id="contact-mail">
+    <label for="contact-mail">Mail</label>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

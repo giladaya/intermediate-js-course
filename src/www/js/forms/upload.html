@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload File Demo</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <style>
+    img {
+      width: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<p>Open up src/www/js/forms/upload.js to get started</p>
+
+<h1>Exercise 1</h1>
+
+<!-- code goes here -->
+
+<hr>
+
+<h1>Exercise 2</h1>
+
+<form id="ex2-form" class="w-50">
+  <div class="form-group">
+    <input id="ex2-file" name="files" type="file" accept="image/*" />
+    <button type="submit">Upload</button>
+  </div>
+  <div class="progress">
+    <div
+      class="progress-bar"
+      role="progressbar"
+      aria-valuenow="0"
+      aria-valuemin="0"
+      aria-valuemax="100"
+    ></div>
+  </div>
+</form>
+
+<script src="upload.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+</body>
+</html>

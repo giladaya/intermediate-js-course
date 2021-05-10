@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms Basics</title>
+
+  <style>
+    .form-group {
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+
+<p>Open src/www/js/forms/ajax.js to get started.</p>
+
+<hr>
+
+<form>
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text">
+  </div>
+
+  <div class="form-group">
+    <label>Subtask 1</label>
+    <input type="text">
+    <label>Subtask 2</label>
+    <input type="text">
+  </div>
+
+  <div class="form-group">
+    <label>Tag name</label>
+    <input type="text">
+    <label>Tag color</label>
+    <select>
+      <option value="">Choose one</option>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <input type="checkbox" value="1" id="subscribe">
+    <label for="subscribe">Subscribe to updates</label>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+
+<script src="ajax.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+
+</body>
+</html>

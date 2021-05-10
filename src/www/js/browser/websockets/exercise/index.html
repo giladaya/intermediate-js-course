@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebSockets Exercise</title>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>WebSockets</h1>
+<p>Copy this command into your terminal to start the websockets server:</p>
+<p><code>nodemon src/www/js/browser/websockets/exercise/server.js</code></p>
+<p>
+  Once you have your implementation running, test communication across multiple clients
+  by opening this page in multiple windows and joining the chat.
+</p>
+
+<hr>
+
+<form id="name-form" action="#">
+  Enter your name:
+  <input type="text">
+  <button>Send</button>
+</form>
+
+<form action="#" id="chat-form" style="display: none;">
+  Say something:
+  <input type="text">
+  <button>Send</button>
+</form>
+
+<ul id="chat"></ul>
+
+<script src="../../../lib/jquery.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
