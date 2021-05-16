@@ -13,7 +13,7 @@ Start by forking and cloning the repo. If you don't clone the repo, then you won
 Once you've cloned the repo, set this repo as the `upstream`
 
 ```
-$ git remote add upstream https://github.com/AndrewSouthpaw/webdev.git
+$ git remote add upstream https://github.com/giladaya/intermediate-js-course.git
 ```
 
 When I update the repo and you want to pull the recent changes in upstream:
