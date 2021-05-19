@@ -4,6 +4,10 @@
  *
  * Add a click listener to the "Click Me" button. When clicked, it should
  * wait 2 seconds and then increment the value displayed.
+ * 
+ * Use:
+ * document.getElementById("ex1-button").onclick = (ev) => {…}
+ * document.getElementById("ex1-count").innerText = 'Hello'
  */
 
 // code
